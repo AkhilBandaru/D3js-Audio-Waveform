@@ -105,15 +105,15 @@ svg {
       <div class="svg">
         <!-- h2 Audio:-->
       </div>
-      <h2>500 samples</h2>
+      <h2>200 samples</h2>
       <div class="svg2">
         <!-- h2 Audio:-->
       </div>
-      <h2>1000 samples</h2>
+      <h2>500 samples</h2>
       <div class="svg3">
         <!-- h2 Audio:-->
       </div>
-      <h2>5000 samples</h2>
+      <h2>1000 samples</h2>
       <div id="svg4" class="svg4">
         <!-- h2 Audio:-->
       </div>
@@ -156,9 +156,9 @@ function subSample(a, n) {
 // initialized the 4 different charts
 d3.json(wave_uri, function(error, json) {
   svg_render(subSample(waveFormObject, 100), ".waveform > .svg");
-  svg_render(subSample(waveFormObject, 500), ".waveform > .svg2");
-  svg_render(subSample(waveFormObject, 1000), ".waveform > .svg3");
-  svg_render(subSample(waveFormObject, 5000), ".waveform > .svg4");
+  svg_render(subSample(waveFormObject, 200), ".waveform > .svg2");
+  svg_render(subSample(waveFormObject, 500), ".waveform > .svg3");
+  svg_render(subSample(waveFormObject, 1000), ".waveform > .svg4");
 });
 
 function svg_render(data, svg, viewBox) {
